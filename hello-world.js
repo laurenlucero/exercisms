@@ -1,7 +1,4 @@
-//
-// This is only a SKELETON file for the 'Hello World' exercise. It's been provided as a
-// convenience to get you started writing code faster.
-//
+// Hello, World! I am getting back into a daily code routine!
 
 export const hello = () => {
   return "Hello, World!";
