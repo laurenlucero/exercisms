@@ -3,6 +3,9 @@
 // return true if argument is an Armstrong number
 
 export const isArmstrongNumber = (num) => {
+  if (typeof num !== "number" || num < 0)
+    throw new Error("Only positive numbers are allowed");
+
   const numArr = num.toString().split(""); // converts num to an array of digits
 
   const reducer = (total, currentValue) => {
