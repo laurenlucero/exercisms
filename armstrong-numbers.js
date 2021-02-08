@@ -9,7 +9,7 @@ export const isArmstrongNumber = (num) => {
   const numArr = num.toString().split(""); // converts num to an array of digits
 
   const reducer = (total, currentValue) => {
-    currentValue = parseInt(currentValue); // converts currentValue to an integer
+    currentValue = Number(currentValue); // converts currentValue to an integer
     return total + Math.pow(currentValue, numArr.length); // returns the base to the exponent power
   };
 
